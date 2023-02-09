@@ -178,30 +178,30 @@ w = [random.randint(0, span) for a in range(0, size2)]
 insertion_sort3(w)
 print("Insertion Sort(size="+ str(size2)+"): ", round(time.time() - start_time, 11))
 
-start_time = time.time()
-w = [random.randint(0, span) for a in range(0, size2)]
-selection_sort(w)
-print("Selection Sort(size="+ str(size2)+"): ", round(time.time() - start_time, 11))
+# start_time = time.time()
+# w = [random.randint(0, span) for a in range(0, size2)]
+# selection_sort(w)
+# print("Selection Sort(size="+ str(size2)+"): ", round(time.time() - start_time, 11))
 
-start_time = time.time()
-w = [random.randint(0, span) for a in range(0, size2)]
-bubble_sort2(w)
-print("Bubble Sort(size="+ str(size2)+"): ", round(time.time() - start_time, 11))
+# start_time = time.time()
+# w = [random.randint(0, span) for a in range(0, size2)]
+# bubble_sort2(w)
+# print("Bubble Sort(size="+ str(size2)+"): ", round(time.time() - start_time, 11))
 
-start_time = time.time()
-w = [random.randint(0, span) for a in range(0, size2)]
-merge_sort(w)
-print("Merge Sort(size="+ str(size2)+"): ", round(time.time() - start_time, 11))
+# start_time = time.time()
+# w = [random.randint(0, span) for a in range(0, size2)]
+# merge_sort(w)
+# print("Merge Sort(size="+ str(size2)+"): ", round(time.time() - start_time, 11))
 
-start_time = time.time()
-w = [random.randint(0, span) for a in range(0, size2)]
-quick_sort(w)
-print("Quick Sort(size="+ str(size2)+"): ", round(time.time() - start_time, 11))
+# start_time = time.time()
+# w = [random.randint(0, span) for a in range(0, size2)]
+# quick_sort(w)
+# print("Quick Sort(size="+ str(size2)+"): ", round(time.time() - start_time, 11))
 
-start_time = time.time()
-w = [random.randint(0, span) for a in range(0, size2)]
-heapsort(w)
-print("Heap Sort(size="+ str(size2)+"): ", round(time.time() - start_time, 11))
+# start_time = time.time()
+# w = [random.randint(0, span) for a in range(0, size2)]
+# heapsort(w)
+# print("Heap Sort(size="+ str(size2)+"): ", round(time.time() - start_time, 11))
 
 #ALREADY SORTED ------------------------
 start_time = time.time()
@@ -211,62 +211,62 @@ w = [a for a in range(0, size2)]
 insertion_sort3(w)
 print("Insertion Sort(size="+ str(size2)+"): ", round(time.time() - start_time, 11))
 
-start_time = time.time()
-selection_sort(w)
-print("Selection Sort(size="+ str(size2)+"): ", round(time.time() - start_time, 11))
+# start_time = time.time()
+# selection_sort(w)
+# print("Selection Sort(size="+ str(size2)+"): ", round(time.time() - start_time, 11))
 
-start_time = time.time()
-bubble_sort2(w)
-print("Bubble Sort(size="+ str(size2)+"): ", round(time.time() - start_time, 11))
+# start_time = time.time()
+# bubble_sort2(w)
+# print("Bubble Sort(size="+ str(size2)+"): ", round(time.time() - start_time, 11))
 
-start_time = time.time()
-merge_sort(w)
-print("Merge Sort(size="+ str(size2)+"): ", round(time.time() - start_time, 11))
+# start_time = time.time()
+# merge_sort(w)
+# print("Merge Sort(size="+ str(size2)+"): ", round(time.time() - start_time, 11))
 
-start_time = time.time()
-quick_sort(w)
-print("Quick Sort(size="+ str(size2)+"): ", round(time.time() - start_time, 11))
+# start_time = time.time()
+# quick_sort(w)
+# print("Quick Sort(size="+ str(size2)+"): ", round(time.time() - start_time, 11))
 
-start_time = time.time()
-heapsort(w)
-print("Heap Sort(size="+ str(size2)+"): ", round(time.time() - start_time, 11))
+# start_time = time.time()
+# heapsort(w)
+# print("Heap Sort(size="+ str(size2)+"): ", round(time.time() - start_time, 11))
 
-#REVERSE SORTED ---------------------------------
-start_time = time.time()
-print("\nReverse Sorted\n---------------------------------")
+# #REVERSE SORTED ---------------------------------
+# start_time = time.time()
+# print("\nReverse Sorted\n---------------------------------")
 
-w = [a for a in range(0, size2)]
-w.reverse()
-insertion_sort3(w)
-print("Insertion Sort(size="+ str(size2)+"): ", round(time.time() - start_time, 11))
+# w = [a for a in range(0, size2)]
+# w.reverse()
+# insertion_sort3(w)
+# print("Insertion Sort(size="+ str(size2)+"): ", round(time.time() - start_time, 11))
 
-start_time = time.time()
-w = [a for a in range(0, size2)]
-w.reverse()
-selection_sort(w)
-print("Selection Sort(size="+ str(size2)+"): ", round(time.time() - start_time, 11))
+# start_time = time.time()
+# w = [a for a in range(0, size2)]
+# w.reverse()
+# selection_sort(w)
+# print("Selection Sort(size="+ str(size2)+"): ", round(time.time() - start_time, 11))
 
-start_time = time.time()
-w = [a for a in range(0, size2)]
-w.reverse()
-bubble_sort2(w)
-print("Bubble Sort(size="+ str(size2)+"): ", round(time.time() - start_time, 11))
+# start_time = time.time()
+# w = [a for a in range(0, size2)]
+# w.reverse()
+# bubble_sort2(w)
+# print("Bubble Sort(size="+ str(size2)+"): ", round(time.time() - start_time, 11))
 
-start_time = time.time()
-w = [a for a in range(0, size2)]
-w.reverse()
-merge_sort(w)
-print("Merge Sort(size="+ str(size2)+"): ", round(time.time() - start_time, 11))
+# start_time = time.time()
+# w = [a for a in range(0, size2)]
+# w.reverse()
+# merge_sort(w)
+# print("Merge Sort(size="+ str(size2)+"): ", round(time.time() - start_time, 11))
 
-start_time = time.time()
-w = [a for a in range(0, size2)]
-w.reverse()
-quick_sort(w)
-print("Quick Sort(size="+ str(size2)+"): ", round(time.time() - start_time, 11))
+# start_time = time.time()
+# w = [a for a in range(0, size2)]
+# w.reverse()
+# quick_sort(w)
+# print("Quick Sort(size="+ str(size2)+"): ", round(time.time() - start_time, 11))
 
-start_time = time.time()
-w = [a for a in range(0, size2)]
-w.reverse()
-heapsort(w)
-print("Heap Sort(size="+ str(size2)+"): ", round(time.time() - start_time, 11))
-print("")
+# start_time = time.time()
+# w = [a for a in range(0, size2)]
+# w.reverse()
+# heapsort(w)
+# print("Heap Sort(size="+ str(size2)+"): ", round(time.time() - start_time, 11))
+# print("")

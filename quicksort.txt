@@ -1,0 +1,7 @@
+#define a function quicksort that takes an argument i.e arr to represent a list of elements to be sorted
+#check the length of the array list if is less or equal to one,if so,return the list the way it is since it is already sorted.
+#if the length of the array list is greater than one,choose the first element as the pivot element
+#create a list to contain the rest of the elements from index1 that are less than or equal to the pivot.element at index 0.
+#create another list to contain the rest of the elements from index1 that are greater than  the pivot.element at index 0.
+#recursively call the function on the less and greater lists.
+#concatenate the results with the pivot to form the final sorted list.
