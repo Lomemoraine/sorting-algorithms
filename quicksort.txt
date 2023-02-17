@@ -5,3 +5,27 @@
 #create another list to contain the rest of the elements from index1 that are greater than  the pivot.element at index 0.
 #recursively call the function on the less and greater lists.
 #concatenate the results with the pivot to form the final sorted list.
+QUICKSORT(arr, low, high)
+  if low < high
+    pivot_index = PARTITION(arr, low, high)
+    QUICKSORT(arr, low, pivot_index - 1)
+    QUICKSORT(arr, pivot_index + 1, high)
+
+PARTITION(arr, low, high)
+  pivot = arr[high]
+  i = low - 1
+  for j = low to high - 1
+    if arr[j] <= pivot
+      i = i + 1
+      SWAP(arr[i], arr[j])
+  SWAP(arr[i + 1], arr[high])
+  return i + 1
+
+SWAP(x, y)
+  temp = x
+  x = y
+  y = temp
+  ##Time complexity
+  The time complexity of the QuickSort algorithm can be determined by analyzing the number of operations required to sort an input list of length n. 
+  In the worst case, the algorithm divides the input list into two sublists of equal size, which results in T(n) = 2T(n/2) + O(n). 
+  Using the Master Theorem, it can be shown that the time complexity of QuickSort in the worst case is O(n^2).

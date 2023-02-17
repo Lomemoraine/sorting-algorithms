@@ -1,3 +1,4 @@
+import time
 def quick_sort(arr):
     if len(arr) <= 1:
         return arr
@@ -14,7 +15,10 @@ for i in range(10):
     numbers.append(int(input()))
 
 # Sorting the list
+start_time = time.time()
 sorted_list = quick_sort(numbers)
+end_time = time.time()
 
 # Printing the sorted list
 print("Sorted list: ", sorted_list)
+print("Time taken to sort: ", end_time - start_time, "seconds")

@@ -1,0 +1,36 @@
+In the missionaries and cannibals problem,
+three missionaries and three cannibals must cross a river using a boat which can carry at most two people, 
+under the constraint that, for both banks, if there are missionaries present on the bank, they cannot be outnumbered by cannibals (if they were,
+the cannibals would eat the missionaries). The boat cannot cross the river by itself with no people on board.
+steps
+#The "deque" module from the "collections" library is imported at the beginning of the code,
+ which provides a double-ended queue data structure that is used to implement the BFS algorithm.
+#The starting state is defined as a tuple (3, 3, 1), which represents the initial configuration 
+where there are 3 missionaries and 3 cannibals on the left side of the river and the boat is also on the left side.
+#The goal state is defined as a tuple (0, 0, 0), which represents the configuration where all the missionaries 
+and cannibals have successfully crossed the river and the boat is on the right side.
+#The actions that can be taken at each step are defined as a list of tuples, 
+where each tuple represents the number of missionaries, number of cannibals, 
+and the direction of the boat (1 for left, 0 for right). There are five possible actions: 
+moving two missionaries,
+moving two cannibals, 
+moving one missionary and one cannibal,
+moving one missionary only, 
+moving one cannibal only.
+#A function "is_valid(state)" is defined to check if a state is valid, 
+meaning that the number of cannibals does not exceed the number of missionaries on either side of the river, 
+and that the state is within the constraints of the problem
+#A function "next_states(state)" is defined to generate all possible next states 
+from a given state by applying each action to the current state 
+and checking if the resulting state is valid.
+#The main function "bfs_solve()" is defined to solve the problem using BFS. 
+It uses the "deque" module to implement a queue to store the states and the paths that led to those states. 
+It starts by enqueuing the starting state and its corresponding path (which is just the starting state itself). 
+It then iteratively dequeues the first state from the queue, checks if it is the goal state, 
+and if not, generates all the possible next states and adds them to the queue
+if they have not been visited before (i.e., if they are not already in the current path).
+It continues this process until the goal state is found or the queue is empty.
+#The solution is obtained by calling the "bfs_solve()" function, 
+which returns a path (a sequence of states) that leads from the starting state to the goal state,
+if one exists. If a solution is found, it is printed out as a list of states
+#If no solution is found, the code prints out a message indicating that no solution was found.
